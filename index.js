@@ -105,12 +105,7 @@ async function question4() {
     name: "question_4",
     type: "list",
     message: "Which of these is NOT a real dinosaur?\n",
-    choices: [
-      "Triceratops",
-      "Brontosaurus",
-      "Raptorex",
-      "Megasaurus", // This is not a real dinosaur name
-    ],
+    choices: ["Triceratops", "Brontosaurus", "Raptorex", "Megasaurus"],
   });
   return handleAnswer(answers.question_4 === "Megasaurus");
 }
@@ -126,7 +121,6 @@ async function question5() {
   return handleAnswer(answers.question_5 === "Stegosaurus");
 }
 
-// Run it with top-level await
 console.clear();
 await welcome();
 await askName();
